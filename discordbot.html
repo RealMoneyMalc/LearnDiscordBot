@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Backup Studios</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="Header">
+      <div class="Headerwords">
+        <div class="HWon">
+          <a href="index.html" style="text-decoration:none; color:gold;"
+            >Home</a
+          >
+          |
+          <a href="discordbot.html" style="text-decoration:none; color:gold;"
+            >Discord Bot</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="Headertwo"></div>
+<!----------------------------------------------------------------------->
+    <div class="Title">
+      <div class="titlewords">
+        <h1 class="dbname">How To Make A Discord Bot</h1>
+      </div>
+    </div>
+<!----------------------------------------------------------------------->
+    <div class="dBody1">
+  <div class="bodywords">
+
+<div class="reg">
+Here, you will learn how to very easily create a discord bot with Python. There are no downloads required, and the code is easy to understand for those who already have some background in python.
+<br><br>
+The only tools you require are the internet. Since this can be done fully online, you can do this on any device that can access the internet (yes even a smart fridge).
+<br><br>
+Firstly, visit to the Discord Developer Portal [link] and navigate to "Applications". From there you will see a blue button in the top-right of your screen that says "New Application". Click the button and make a name for your bot, and then click "Create" just below.
+<br><br>
+Now, go to the "Bot" tab listed on the left and select "Add Bot" once you reach that page. After confirmation, your bot has been created.
+<br><br>
+Now, you can go to Repl.it.com and create a new project in Python. On lines 1 and two in main.py, type in:
+</div>
+<div class="code">
+import discord<br>
+import os
+</div>    
+ <div class="reg">
+this imports the discord.py library and the os library.
+<br>
+Then type in:
+</div>
+<div class="code">
+client = discord.Client()  
+</div>    
+<div class="reg">
+This creates a Discord client, which is the connection to Discord. This sends the commands you create to Discord's servers.
+<br>
+After this, type in:  
+</div>
+<div class="code">
+@client.event<br>
+async def on_ready():<br>
+    print('We have logged in as {0.user}'.format(client))<br>
+<br><br>
+@client.event<br>
+async def on_message(message):<br>
+    if message.author == client.user:<br>
+        return<br>
+</div>
+<div class="reg">
+'@client.event' is used to register an event happening. The event here is 'on_ready()', which tells the bot when to start functioning. Another event is the 'on_message()', which executes when the bot receives a message.
+<br>
+Next, type in:
+</div>
+<div class="code">
+if message.content.startswith('!c'):<br>
+        await message.channel.send('You are using a command')  
+</div> 
+<div class="reg">
+This area defines exactly what we want the bot to do. Here is where you can customize types of messages and what phrases you want the bot to respond to.
+<br>
+Lastly, type in:  
+</div>
+<div class="code">
+discordtoken = os.environ.get("TOKEN")<br>
+client.run(discordtoken)  
+</div> 
+<div class="reg">
+These last couple of lines get the specific token for your bot.
+<br>
+All the code combined should look like this:
+</div>
+<div class="code">
+import discord<br>
+import os
+<br>
+client = discord.Client()<br>
+<br><br>
+@client.event<br>
+async def on_ready():<br>
+    print('We have logged in as {0.user}'.format(client))
+<br><br>
+@client.event<br>
+async def on_message(message):<br>
+    if message.author == client.user:<br>
+        return
+<br><br>
+if message.content.startswith('!c'):<br>
+        await message.channel.send('You are using a command')
+<br><br>
+discordtoken = os.environ.get("TOKEN")<br>
+client.run(discordtoken)  
+</div> 
+<div class="reg">
+Now, you need to set up a file called .env to correlate with the last two lines in main.py. On Repl.it, next to the word 'Files' in the top left of the webpage, there are two icons: a portrait-facing paper with a plus and a landscape-facing folder with a plus. Click the portrait-facing paper and name the new file .env (don't forget the period).
+<br><br>  
+In this file, type:
+</div>
+<div class="code">
+TOKEN=
+</div> 
+<div class="reg">
+After the equals sign is where you will put your bot token. To get this token, navigate back to the Discord Developer Portal to the Bot tab. Next to or underneath the large icon/profile picture of your bot, there are two blue buttons that say 'Copy' and 'Regenerate'. Click the 'Copy' button. You have copied your token. Go back to your .env file in Repl.it and paste the token next to the equals sign.
+<br><br>
+Now go back to the Discord Developer Portal and go to the OAuth2 tab, which is right above the Bot tab. Here you can choose permissions for your bot, and once you finish choosing your permissions, click the blue 'Copy' button on top of the Permissions module and paste the URL into your browser.
+<br><br>
+You will be asked to Authorize the bot and choose a server. Once you do, your bot is now linked to your server and can be used.
+<br><br>
+Go back to Repl.it and click the green 'RUN' button at the top center of the webpage and after a few seconds, your bot should be ready.
+<br><br>
+Now go to the discord server you linked the bot to and type !c. The bot should respond with, You are using a command.
+<br><br>
+Feel free to customize your bot further after this.
+</div>
+    
+ </div>
+    </div>   
+    <div class="Footer1">
+      <div class="Footerwords">
+        <div class="FWcn">Discord Bots</div>
+        <div class="copyright">©2021 The Bois</div>
+      </div>
+    </div>
+  </body>
+</html>

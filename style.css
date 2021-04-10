@@ -1,0 +1,329 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 0em;
+  background-color: #FAF0E6;
+}
+.sitename{
+  font-size:70px;
+}
+.dbname{
+  font-size:70px;
+}
+.HWon {
+  color: white;
+  font-size: 20px;
+  top: 17px;
+  width: 440px;
+  position: relative;
+}
+.HWon1 {
+  color: black;
+  font-size: 20px;
+  top: 17px;
+  width: 440px;
+  position: relative;
+}
+.Headerwords {
+  font-family: calibri;
+  color: white;
+  top:40px;
+  height:50px;
+  justify-content:center;
+  text-align:center;
+  font-size: 20px;
+  float:center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position:absolute;
+}
+.Header {
+  font-family: calibri;
+  color: white;
+  position: fixed;
+  padding: 0%;
+  background-color: black;
+  z-index: 999;
+  height: 70px;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 30px;
+}
+.Header1 {
+  font-family: calibri;
+  color: black;
+  position: fixed;
+  padding: 0%;
+  background-color: black;
+  z-index: 999;
+  height: 70px;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 30px;
+}
+.Headertwo {
+  font-family: calibri;
+  color: red;
+  position: fixed;
+  border: solid black;
+  padding: 0%;
+  background-color: white;
+  box-shadow: 0px 0px 3px 1px black;
+  z-index: 998;
+  height: 1px;
+  width: 100%;
+  opacity: 0.5;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 62px;
+}
+.Title {
+  font-family: calibri;
+  color: white;
+  background-color:black;
+  background-image: url("https://cdn.glitch.com/e4ab2de1-4823-47b4-af0a-78bbe3d745ad%2Fdiscordwhitetext.png?v=1617309092281");
+  background-repeat: no-repeat;
+  background-position:50% 80%;
+  background-size: 50%;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content:center;
+  text-align:center;
+  z-index: 997;
+  height: 1000px;
+}
+.titlewords {
+  font-family: calibri;
+  color: white;
+  background-color:clear;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  height: 60px;
+  top:800px;
+  width: 100%;
+  z-index: 999;
+}
+.Title1 {
+  font-family: calibri;
+  color: white;
+  background-color:white;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content:center;
+  text-align:center;
+  z-index: 997;
+  height: 500px;
+}
+.titlewords1 {
+  font-family: calibri;
+  color: white;
+  background-color:clear;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  height: 60px;
+  top:300px;
+  width: 100%;
+  z-index: 999;
+}
+.dBody {
+  font-family: calibri;
+  color: darkgoldenrod;
+    text-align:center;
+  position: relative;
+  padding: 2%;
+  box-shadow: 0px 0px 2px 0.5px darkgray;
+  background-color:#D8BFD8;
+  width: 70%;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 990;
+  height: 90px;
+}
+.dBody1 {
+  font-family: calibri;
+  color: darkgoldenrod;
+  position: relative;
+  padding: 2%;
+  background-color:clear;
+  width: 90%;
+  top: 700px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 990;
+  height: 250px;
+}
+.bodywords {
+  font-family: calibri;
+  color: black;
+  font-size: 20px;
+  position: relative;
+  z-index: 990;
+}
+.reg{
+  font-family: calibri;
+  color: black;
+  box-shadow: 0px 0px 2px 1px black;
+  font-size: 20px;
+  margine:1em;
+  padding:2%;
+  font-size:15px;
+  position: relative;
+}
+.code{
+  font-family: "Courier New", monospace;
+  color: black;
+  font-size: 20px;
+  margine:1em;
+  padding:3%;
+  position: relative;
+  font-size:13px;
+  font-weight:bold;
+}
+.caption{
+    font-family: calibri;
+  color: black;
+  position: relative;
+  padding: 2%;
+  background-color:clear;
+  width: 90%;
+  top: 600px;
+  left: 50%;
+  text-align:center;
+  transform: translate(-50%, -50%);
+  z-index: 990;
+  height: 50px;
+}
+.pilotbuttons {
+  font-family: calibri;
+  color: white;
+  position: absolute;
+  width: 90%;
+  background-color: clear;
+  background-image: url("https://cdn.glitch.com/e4ab2de1-4823-47b4-af0a-78bbe3d745ad%2Fblackdesign3tp.png?v=1617282526731");
+  background-size:150px 300px;
+  background-repeat: repeat-x;
+  background-position:center;
+  top: 950px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 995;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.appw {
+  background-color: #FAF0E6;
+  box-shadow: 0px 0px 3px 1px black;
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+  color: white;
+  top:20px;
+  font-size: 16px;
+  margin:1em;
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+.appi {
+  background-color: clear;
+  background-image: url("https://cdn.glitch.com/e4ab2de1-4823-47b4-af0a-78bbe3d745ad%2Fdiscordblack1.svg?v=1617313908785");
+  background-position:center;
+  background-size:100%;
+  background-repeat: no-repeat;
+box-shadow: 0px 0px 3px 1px clear;
+  color: white;
+  left:50%;
+    transform: translate(-50%, -50%);
+  font-size: 16px;
+  position: relative;
+  width: 90%;
+  top:80px;
+  height: 150px;
+}
+.appd {
+  background-color: clear;
+box-shadow: 0px 0px 3px 1px clear;
+  color: black;
+  left:50%;
+    transform: translate(-50%, -50%);
+  font-size: 16px;
+  position: relative;
+  width: 90%;
+  top:50px;
+  padding:2%;
+  font-size:15px;
+  height: 120px;
+  justify-content:center;
+}
+.appdf {
+  background-color: clear;
+  color: black;
+  left:50%;
+    transform: translate(-50%, -50%);
+  font-size: 16px;
+  position: relative;
+  width: 100%;
+  top:55px;
+  font-size:15px;
+  height: 100px;
+  justify-content:center;
+}
+.FWcn {
+  color: white;
+  font-size: 20px;
+  top: 10px;
+  left: 50px;
+  width: 440px;
+  position: relative;
+}
+.Footerwords {
+  font-family: calibri;
+  color: white;
+  padding: 1%;
+  font-size: 15px;
+}
+.Footer {
+  font-family: calibri;
+  color: white;
+  position: absolute;
+  padding: 0%;
+  background-color: black;
+  z-index: 998;
+  height: 80px;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 1200px;
+}
+.Footer1 {
+  font-family: calibri;
+  color: white;
+  position: absolute;
+  padding: 0%;
+  background-color: black;
+  z-index: 998;
+  height: 80px;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 2850px;
+}
+.copyright {
+  color: white;
+  font-size: 12px;
+  top: 10px;
+  font-family: calibri;
+  left: 50px;
+  width: 240px;
+  position: relative;
+}
